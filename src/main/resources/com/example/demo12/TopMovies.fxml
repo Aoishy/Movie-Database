@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.TopMoviesController">
+   <children>
+      <Label layoutX="283.0" layoutY="14.0" text="Top Movies">
+         <font>
+            <Font name="French Script MT" size="62.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5457413369548809" startY="0.2492113805343676">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4983755648136139" green="0.6594325304031372" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Button layoutX="322.0" layoutY="121.0" mnemonicParsing="false" onAction="#ClickToGetTopMovies" text="GetTopMovies" textFill="#0e414e">
+         <font>
+            <Font name="Footlight MT Light" size="21.0" />
+         </font></Button>
+      <TableView fx:id="Table" layoutX="20.0" layoutY="194.0" prefHeight="208.0" prefWidth="814.0">
+         <columns>
+            <TableColumn fx:id="Titlecol" prefWidth="118.66667175292969" text="Title" />
+            <TableColumn fx:id="Yearcol" prefWidth="75.66668701171875" text="Year" />
+            <TableColumn fx:id="G1col" prefWidth="73.66668701171875" text="Genre1" />
+
+
+
+            <TableColumn fx:id="G2col" prefWidth="69.66668701171875" text="Genre2" />
+            <TableColumn fx:id="G3col" prefWidth="70.66665649414062" text="Genre3" />
+            <TableColumn fx:id="Timecol" prefWidth="103.0" text="Running_Time" />
+            <TableColumn fx:id="Companycol" prefWidth="152.33331298828125" text="Production_Company" />
+            <TableColumn fx:id="Budgetcol" prefWidth="70.0" text="Budget" />
+            <TableColumn fx:id="Revenuecol" prefWidth="76.66668701171875" text="Revenue" />
+
+         </columns>
+
+      </TableView>
+      <Button layoutX="728.0" layoutY="422.0" mnemonicParsing="false" onAction="#Clickback" text="Back" textFill="#115067">
+         <font>
+            <Font name="French Script MT" size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

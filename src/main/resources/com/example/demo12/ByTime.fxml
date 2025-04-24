@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.ByTimeController"> <children>
+    <Label layoutX="292.0" layoutY="10.0" text="Search By Running Time">
+        <font>
+            <Font name="French Script MT" size="39.0" />
+        </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.11356466876971609">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.051061294972896576" green="0.2979315519332886" blue="0.359649121761322" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+
+    </Label>
+    <Label layoutX="48.0" layoutY="98.0" text="Enter First Range" textFill="#c5d5db">
+        <font>
+            <Font name="Footlight MT Light" size="24.0" />
+        </font>
+
+    </Label>
+    <TextField fx:id="Rangefield1" layoutX="244.0" layoutY="99.0" prefHeight="25.0" prefWidth="149.0">
+
+    </TextField>
+    <Label layoutX="48.0" layoutY="144.0" text="Enter Second Range" textFill="#c6d6dd">
+        <font>
+            <Font name="Footlight MT Light" size="20.0" />
+        </font>
+
+      </Label>
+    <TextField fx:id="Rangefield2" layoutX="244.0" layoutY="145.0">
+
+    </TextField>
+    <Button layoutX="499.0" layoutY="158.0" mnemonicParsing="false" onAction="#TimeClick" text="Search" textFill="#164d61">
+        <font>
+            <Font name="Footlight MT Light" size="18.0" />
+        </font>
+
+    </Button>
+    <TableView fx:id="Table" layoutX="14.0" layoutY="220.0" prefHeight="200.0" prefWidth="819.0">
+        <columns>
+            <TableColumn fx:id="Titlecol" prefWidth="102.66667175292969" text="Title" />
+            <TableColumn fx:id="Yearcol" prefWidth="78.66667175292969" text="Year" />
+            <TableColumn fx:id="G1col" prefWidth="73.33334350585938" text="Genre1" />
+
+
+
+            <TableColumn fx:id="G2col" prefWidth="71.33334350585938" text="Genre2" />
+            <TableColumn fx:id="G3col" prefWidth="74.0" text="Genre3" />
+            <TableColumn fx:id="Timecol" prefWidth="95.99996948242188" text="Running_Time" />
+            <TableColumn fx:id="Companycol" prefWidth="151.6666259765625" text="Production_Company" />
+            <TableColumn fx:id="Budgetcol" prefWidth="80.6666259765625" text="Budget" />
+            <TableColumn fx:id="Revenuecol" prefWidth="84.0" text="Revenue" />
+
+        </columns>
+
+    </TableView>
+    <Button layoutX="735.0" layoutY="440.0" mnemonicParsing="false" onAction="#BackClick" text="Back" textFill="#236886">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+</children>
+
+
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.MainPageController">
+   <children>
+      <TableView fx:id="Table" layoutX="138.0" layoutY="108.0" prefHeight="302.0" prefWidth="710.0" style="-fx-background-color:#d6e6ef;">
+
+         <columns>
+            <TableColumn fx:id="Titlecol" prefWidth="87.66665649414062" style="-fx-background-color:#85adc5 ;" text="Title" />
+            <TableColumn fx:id="Yearcol" prefWidth="56.66667175292969" style="-fx-background-color:#85adc5 ;" text="Year" />
+            <TableColumn fx:id="G1col" prefWidth="63.999969482421875" style="-fx-background-color:#85adc5 ;" text="Genre1" />
+
+
+
+            <TableColumn fx:id="G2col" prefWidth="68.33334350585938" style="-fx-background-color:#85adc5 ;" text="Genre2" />
+            <TableColumn fx:id="G3col" prefWidth="59.000030517578125" style="-fx-background-color:#85adc5 ;" text="Genre3" />
+            <TableColumn fx:id="Timecol" prefWidth="91.33334350585938" style="-fx-background-color:#85adc5 ;" text="Running_Time" />
+            <TableColumn fx:id="Companycol" minWidth="0.0" prefWidth="134.0" style="-fx-background-color:#85adc5 ;" text="Production_Company" />
+            <TableColumn fx:id="Budgetcol" minWidth="0.0" prefWidth="67.3333740234375" style="-fx-background-color:#85adc5 ;" text="Budget" />
+            <TableColumn fx:id="Revenuecol" prefWidth="86.6666259765625" style="-fx-background-color:#85adc5 ;" text="Revenue" />
+
+         </columns>
+
+      </TableView>
+      <Pane prefHeight="517.0" prefWidth="135.0" style="-fx-background-color:#0d3b4c ;">
+         <children>
+      
+            <Button layoutX="6.0" layoutY="166.0" mnemonicParsing="false" onAction="#ClickShowAllMovies" prefHeight="43.0" prefWidth="126.0" text="Show All Movies" textFill="#163d69">
+               <font>
+                  <Font name="Footlight MT Light" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="6.0" layoutY="227.0" mnemonicParsing="false" onAction="#ClickRecentMovies" prefHeight="43.0" prefWidth="126.0" text="Recent Movies" textFill="#1b4d65">
+               <font>
+                  <Font name="Footlight MT Light" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="6.0" layoutY="293.0" mnemonicParsing="false" onAction="#ClickMaximumRevenue" prefHeight="50.0" prefWidth="126.0" text="Maximum Revenue" textFill="#195569">
+               <font>
+                  <Font name="Footlight MT Light" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="364.0" mnemonicParsing="false" onAction="#ClickTotalProfit" prefHeight="43.0" prefWidth="126.0" text="Total Profit" textFill="#11445e">
+               <font>
+                  <Font name="Footlight MT Light" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="429.0" mnemonicParsing="false" onAction="#ClickSearchOptions" prefHeight="43.0" prefWidth="126.0" text="Search Options" textFill="#0d4157">
+               <font>
+                  <Font name="Footlight MT Light" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="19.0" layoutY="71.0" text="Choices" textFill="#d1d6e3">
+               <font>
+                  <Font name="French Script MT" size="46.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="144.0" layoutY="425.0" prefHeight="89.0" prefWidth="404.0" style="-fx-background-color: #0d3b4c">
+         <children>
+            <Button layoutX="23.0" layoutY="20.0" mnemonicParsing="false" onAction="#ClickAddMovie" prefHeight="40.0" prefWidth="135.0" text="Add Movie" textFill="#255b7b">
+               <font>
+                  <Font name="Footlight MT Light" size="22.0" />
+               </font></Button>
+            <Button layoutX="182.0" layoutY="18.0" mnemonicParsing="false" onAction="#ClickTransferMovie" prefHeight="43.0" prefWidth="178.0" text=" Transfer Movie" textFill="#265870">
+               <font>
+                  <Font name="Footlight MT Light" size="22.0" />
+               </font></Button>
+         </children></Pane>
+      <Pane layoutX="668.0" layoutY="441.0" prefHeight="62.0" prefWidth="142.0" style="-fx-background-color:#577382;">
+         <children>
+            <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#ClickBack" prefHeight="35.0" prefWidth="97.0" text="Back" textFill="#124960">
+               <font>
+                  <Font name="Footlight MT Light" size="21.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane layoutX="145.0" layoutY="24.0" prefHeight="69.0" prefWidth="559.0" style="-fx-background-color:#0d3b4c ;">
+         <children>
+            <Label layoutX="55.0" layoutY="-6.0" prefHeight="62.0" prefWidth="467.0" text="Welcome To Main-Page">
+               <font>
+                  <Font name="French Script MT" size="58.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5488959231211183" endY="0.4794953290596369" startX="0.5457412692650636" startY="0.09148255357230875">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.46572449803352356" green="0.7707358598709106" blue="0.8245614171028137" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></Pane>
+   </children>
+
+</AnchorPane>

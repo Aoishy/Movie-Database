@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.ByGenreController">
+    <children>
+        <Label layoutX="98.0" layoutY="113.0" text="Enter Genre Type" textFill="#bbdae6">
+            <font>
+                <Font name="Footlight MT Light" size="23.0" />
+            </font></Label>
+        <TextField fx:id="GenreField" alignment="TOP_CENTER" layoutX="313.0" layoutY="107.0">
+            <font>
+                <Font name="System Italic" size="21.0" />
+            </font>
+
+          </TextField>
+        <Button layoutX="642.0" layoutY="110.0" mnemonicParsing="false" onAction="#GenreClick" text="Search" textFill="#155159">
+            <font>
+                <Font name="Footlight MT Light" size="22.0" />
+            </font>
+        </Button>
+        <TableView fx:id="Table" layoutX="6.0" layoutY="186.0" prefHeight="210.0" prefWidth="833.0">
+            <columns>
+                <TableColumn fx:id="Titlecol" prefWidth="101.66666412353516" text="Title" />
+                <TableColumn fx:id="Yearcol" prefWidth="78.00001525878906" text="Year" />
+                <TableColumn fx:id="G1col" prefWidth="84.33334350585938" text="Genre1" />
+
+
+
+                <TableColumn fx:id="G2col" prefWidth="79.66668701171875" text="Genre2" />
+                <TableColumn fx:id="G3col" prefWidth="71.33331298828125" text="Genre3" />
+                <TableColumn fx:id="Timecol" prefWidth="102.00003051757812" text="Running_Time" />
+                <TableColumn fx:id="Companycol" prefWidth="151.33331298828125" text="Production_Company" />
+                <TableColumn fx:id="Budgetcol" prefWidth="70.66668701171875" text="Budget" />
+                <TableColumn fx:id="Revenuecol" prefWidth="92.66670735677087" text="Revenue" />
+
+            </columns>
+
+        </TableView>
+      <Button layoutX="718.0" layoutY="416.0" mnemonicParsing="false" onAction="#BackClick" text="Back" textFill="#2e6772">
+         <font>
+            <Font name="Footlight MT Light" size="22.0" />
+         </font></Button>
+      <Label layoutX="379.0" layoutY="22.0" text="Search By Genre">
+         <font>
+            <Font name="French Script MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.27760252365930593" startY="0.10094634817225699">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.31887587904930115" green="0.6233214139938354" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+    </children>
+
+</AnchorPane>

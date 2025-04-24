@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.TransferPageController">
+   <children>
+      <Label layoutX="294.0" layoutY="21.0" text="Transfer Movies">
+         <font>
+            <Font name="French Script MT" size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.45110408816051784" startY="0.258675102931844">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16569200158119202" green="0.6586257219314575" blue="0.7456140518188477" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="118.0" layoutY="120.0" text="Movie Name" textFill="#a2d4e6">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="moviefield" layoutX="118.0" layoutY="156.0" prefHeight="25.0" prefWidth="330.0">
+
+      </TextField>
+      <Label layoutX="118.0" layoutY="211.0" text="Production company" textFill="#a1d9e6">
+         <font>
+            <Font name="Footlight MT Light" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="companyfield" layoutX="118.0" layoutY="258.0" prefHeight="25.0" prefWidth="330.0">
+
+      </TextField>
+      <Button fx:id="Confirmbutton" layoutX="118.0" layoutY="321.0" mnemonicParsing="false" onAction="#OnConfirmClick" text="Confirm" textFill="#0f6a72">
+         <font>
+            <Font name="Footlight MT Light" size="19.0" />
+         </font></Button>
+      <Button layoutX="562.0" layoutY="365.0" mnemonicParsing="false" onAction="#OnBackClick" text="Back" textFill="#0d556e">
+         <font>
+            <Font name="French Script MT" size="30.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

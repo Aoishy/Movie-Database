@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.ByTitleController">
+    <children>
+        <Label layoutX="385.0" layoutY="98.0" prefHeight="34.0" prefWidth="244.0" text="Enter Movie Title" textFill="#ced3d9">
+            <font>
+                <Font name="Footlight MT Light" size="23.0" />
+            </font></Label>
+        <TextField fx:id="TitleField" layoutX="263.0" layoutY="149.0">
+            <font>
+                <Font size="33.0" />
+            </font>
+
+        </TextField>
+        <Button layoutX="612.0" layoutY="244.0" mnemonicParsing="false" onAction="#TitleClick" text="Search" textFill="#264e62">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="729.0" layoutY="433.0" mnemonicParsing="false" onAction="#BackClick" text="Back" textFill="#256080">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Accordion />
+      <Pane layoutX="6.0" layoutY="323.0" prefHeight="110.0" prefWidth="830.0">
+         <children>
+              <TableView fx:id="Table" style="-fx-background-color:#d6e6ef;" layoutX="7.0" layoutY="14.0" prefHeight="80.0" prefWidth="817.0">
+                  <columns>
+                      <TableColumn fx:id="Titlecol" prefWidth="121.0" text="Title" />
+                      <TableColumn fx:id="Yearcol" prefWidth="59.333343505859375" text="Year" />
+                      <TableColumn fx:id="G1col" prefWidth="77.0" text="Genre1" />
+      
+      
+      
+                      <TableColumn fx:id="G2col" prefWidth="64.33334350585938" text="Genre2" />
+                      <TableColumn fx:id="G3col" prefWidth="71.33334350585938" text="Genre3" />
+                      <TableColumn fx:id="Timecol" prefWidth="94.33331298828125" text="Running_Time" />
+                      <TableColumn fx:id="Companycol" prefWidth="150.33328247070312" text="Production_Company" />
+                      <TableColumn fx:id="Budgetcol" prefWidth="83.0" text="Budget" />
+                      <TableColumn fx:id="Revenuecol" prefWidth="103.33331298828125" text="Revenue" />
+      
+                  </columns>
+      
+              </TableView>
+         </children></Pane>
+      <Label layoutX="372.0" layoutY="24.0" text="Search By Title">
+         <font>
+            <Font name="French Script MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.6403785729633897" endY="1.0" startX="0.2523659189416783" startY="0.09779174997227424">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16894087195396423" green="0.41264891624450684" blue="0.42105263471603394" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+    </children>
+
+</AnchorPane>

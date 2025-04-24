@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.TotalProfit">
+   <children>
+      <Label layoutX="347.0" layoutY="14.0" text="Total Profit"  >
+         <font>
+            <Font name="French Script MT" size="54.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.261829658261609" startY="0.32807575791416105">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4136885404586792" green="0.6585444808006287" blue="0.7017543911933899" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+       <Button layoutX="334.0" layoutY="104.0" mnemonicParsing="false" onAction="#ClickToGetTotalProfit" text="GetTotalProfit" textFill="#0f434e">
+         <font>
+            <Font name="Footlight MT Light" size="31.0" />
+         </font></Button>
+      <Label fx:id="userlabel" layoutX="194.0" layoutY="183.0" prefHeight="134.0" prefWidth="489.0" textFill="#b2cece">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button layoutX="631.0" layoutY="395.0" mnemonicParsing="false" onAction="#OnBackClick" text="Back" textFill="#135e59">
+         <font>
+            <Font name="French Script MT" size="28.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

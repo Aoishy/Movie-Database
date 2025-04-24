@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color:#0d3b4c ;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo12.SearchMoviesController">
+   <children>
+      <Label layoutX="244.0" text="Movie Search Options">
+         <font>
+            <Font name="French Script MT" size="51.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4889589905362776">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3369070887565613" green="0.7366850972175598" blue="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="317.0" layoutY="89.0" mnemonicParsing="false" onAction="#ClickSearchByTitle" text="By Movie Title" textFill="#11667d">
+         <font>
+            <Font name="Footlight MT Light" size="30.0" />
+         </font></Button>
+      <Button layoutX="319.0" layoutY="166.0" mnemonicParsing="false" onAction="#ClickSearchByYear" text="By Relasing Year" textFill="#146165">
+         <font>
+            <Font name="Footlight MT Light" size="26.0" />
+         </font></Button>
+      <Button layoutX="356.0" layoutY="233.0" mnemonicParsing="false" onAction="#ClickSearchByGenre" text="By Genre" textFill="#1b6677">
+         <font>
+            <Font name="Footlight MT Light" size="27.0" />
+         </font></Button>
+      <Button layoutX="299.0" layoutY="302.0" mnemonicParsing="false" onAction="#ClickSearchByTime" text="By Running Time" textFill="#175359">
+         <font>
+            <Font name="Footlight MT Light" size="30.0" />
+         </font></Button>
+      <Button layoutX="655.0" layoutY="408.0" mnemonicParsing="false" onAction="#Clickback" text="Back" textFill="#144e7a">
+         <font>
+            <Font name="Footlight MT Light" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
